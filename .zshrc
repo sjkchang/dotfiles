@@ -79,12 +79,18 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
 alias ls='ls --color'
+alias vi='nvim'
 alias vim='nvim'
 alias c='clear'
-
+alias home='cd ~'
+alias ll="exa -l -g --icons --git"
+alias llt="exa -1 --icons --tree --git-ignore"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
+
+eval $(thefuck --alias tf)
+
