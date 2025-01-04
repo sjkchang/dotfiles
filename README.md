@@ -6,26 +6,26 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
-### Git
-
-```
-pacman -S git
-```
+### Git [Install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ### Stow
 
 ```
-pacman -S stow
+apt install stow
 ```
 
 ### Oh My Posh
 ```
-curl -s https://ohmyposh.dev/install.sh | bash -s
-```
-or 
-```
 curl -s https://ohmyposh.dev/install.sh | bash -s -- -d <install path>
 ```
+
+### FZF
+```
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+```
+
+### TheFuck [Install](https://github.com/nvbn/thefuck?tab=readme-ov-file#installation)
 
 ## Installation
 
