@@ -92,8 +92,6 @@ alias llt="exa -1 --icons --tree --git-ignore"
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
-eval $(thefuck --alias tf)
-
 export PATH=$PATH:/usr/local/go/bin
 
 export NVM_DIR="$HOME/.nvm"
