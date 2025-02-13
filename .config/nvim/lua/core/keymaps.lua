@@ -20,15 +20,20 @@ keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
+keymap.set('n', '<leader>|', '<C-w><C-v>', { desc = 'Split Window Right' })
+keymap.set('n', '<leader>-', '<C-w><C-s>', { desc = 'Split Window Below' })
+keymap.set('n', '<leader>wd', '<C-w><C-q>', { desc = 'Delete Window' })
 keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
 keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
 keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
-keymap.set('n', '<leader>to', '<cmd>tabnew<CR>', { desc = 'Open new tab' })
-keymap.set('n', '<leader>tc', '<cmd>tabclose<CR>', { desc = 'Close current tab' })
-keymap.set('n', '<leader>tl', '<cmd>tabn<CR>', { desc = 'Go to next tab' })
-keymap.set('n', '<leader>tp', '<cmd>tabp<CR>', { desc = 'Go to previous tab' })
+keymap.set('n', '<leader><tab><tab>', '<cmd>tabnew<CR>', { desc = 'New tab' })
+keymap.set('n', '<leader><tab>d', '<cmd>tabclose<CR>', { desc = 'Close tab' })
+keymap.set('n', '<leader><tab>l', '<cmd>tablast<CR>', { desc = 'Last tab' })
+keymap.set('n', '<leader><tab>f', '<cmd>tabfirst<CR>', { desc = 'First tab' })
+keymap.set('n', '<leader><tab>]', '<cmd>tabn<CR>', { desc = 'Next tab' })
+keymap.set('n', '<leader><tab>[', '<cmd>tabp<CR>', { desc = 'Previous tab' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
