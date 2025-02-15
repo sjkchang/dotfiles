@@ -35,6 +35,8 @@ keymap.set('n', '<leader><tab>f', '<cmd>tabfirst<CR>', { desc = 'First tab' })
 keymap.set('n', '<leader><tab>]', '<cmd>tabn<CR>', { desc = 'Next tab' })
 keymap.set('n', '<leader><tab>[', '<cmd>tabp<CR>', { desc = 'Previous tab' })
 
+keymap.set({ 'n', 'x' }, 's', '<Nop>')
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
